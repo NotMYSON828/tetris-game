@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-wrapper">
+            <div class="info-panel">
+                <h1>TETRIS</h1>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="label">SCORE</span>
+                        <span class="value" id="score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">LINES</span>
+                        <span class="value" id="lines">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">LEVEL</span>
+                        <span class="value" id="level">1</span>
+                    </div>
+                </div>
+                <div class="next-box">
+                    <p class="label">NEXT</p>
+                    <canvas id="nextCanvas" width="120" height="120"></canvas>
+                </div>
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-primary">START</button>
+                    <button id="pauseBtn" class="btn btn-secondary" disabled>PAUSE</button>
+                    <button id="resetBtn" class="btn btn-secondary">RESET</button>
+                </div>
+                <div class="instructions">
+                    <p><strong>Controls:</strong></p>
+                    <p>← → : Move</p>
+                    <p>↑ : Rotate</p>
+                    <p>↓ : Drop</p>
+                    <p>SPACE : Hard Drop</p>
+                </div>
+            </div>
+            <canvas id="gameCanvas" width="300" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
