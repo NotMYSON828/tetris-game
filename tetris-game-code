@@ -1,0 +1,51 @@
+create_or_update_file
+{
+  "owner": "NotMYSON828",
+  "repo": "tetris-game",
+  "path": "index.html",
+  "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n   
+  <meta charset=\"UTF-8\">\n    
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  
+  <title>Tetris Game</title>\n   
+  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n    
+  <div class=\"container\">\n       
+  <div class=\"game-wrapper\">\n            
+  <div class=\"info-panel\">\n              
+  <h1>TETRIS</h1>\n               
+  <div class=\"stats\">\n                 
+  <div class=\"stat\">\n                      
+  <span class=\"label\">SCORE</span>\n                       
+  <span class=\"value\" id=\"score\">0</span>\n                 
+  </div>\n                   
+  <div class=\"stat\">\n                     
+  <span class=\"label\">LINES</span>\n                        
+  <span class=\"value\" id=\"lines\">0</span>\n                 
+  </div>\n                   
+  <div class=\"stat\">\n                     
+  <span class=\"label\">LEVEL</span>\n                        
+  <span class=\"value\" id=\"level\">1</span>\n                    
+  </div>\n                
+  </div>\n                
+  <div class=\"next-box\">\n                   
+  <p class=\"label\">NEXT</p>\n                    
+  <canvas id=\"nextCanvas\" width=\"120\" height=\"120\"></canvas>\n                
+  </div>\n               
+  <div class=\"controls\">\n                   
+  <button id=\"startBtn\" class=\"btn btn-primary\">START</button>\n                   
+  <button id=\"pauseBtn\" class=\"btn btn-secondary\" disabled>PAUSE</button>\n                  
+  <button id=\"resetBtn\" class=\"btn btn-secondary\">RESET</button>\n               
+  </div>\n                
+  <div class=\"instructions\">\n                   
+  <p><strong>Controls:</strong></p>\n                   
+  <p>← → : Move</p>\n                   
+  <p>↑ : Rotate</p>\n                  
+  <p>↓ : Drop</p>\n                    
+  <p>SPACE : Hard Drop</p>\n             
+  </div>\n           
+  </div>\n           
+  <canvas id=\"gameCanvas\" width=\"300\" height=\"600\"></canvas>\n        
+  </div>\n    
+  </div>\n    
+  <script src=\"script.js\"></script>\n</body>\n</html>\n",
+  "message": "Add index.html with Tetris game layout"
+}
